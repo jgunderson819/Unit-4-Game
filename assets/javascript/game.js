@@ -1,7 +1,9 @@
 var counter = 0;
+var wins = 0
+var losses = 0
+var targetNumber
 
-
-
+function startGame() {
 var targetNumber = (Math.floor(Math.random()*101) + 19);
 
 
@@ -10,7 +12,7 @@ var targetNumber = (Math.floor(Math.random()*101) + 19);
   $("#score").text("Your Total Score  " + counter);
 
 
-
+}
   
 
   // Now for the hard part. Creating multiple crystals each with their own unique number value.
@@ -61,13 +63,19 @@ var targetNumber = (Math.floor(Math.random()*101) + 19);
 
     // All of the same game win-lose logic applies. So the rest remains unchanged.
     $("#score").text("Your Total Score  " + counter);
+    $("wins").text("Wins:  " + wins);
+    $("losses").text("Losses:  " + losses);
 
     if (counter === targetNumber) {
       alert("You win!");
+      wins++;
+      startGame();
     }
 
     else if (counter >= targetNumber) {
       alert("You lose!!");
+      losses++;
+      startGame();
     }
 
   });
