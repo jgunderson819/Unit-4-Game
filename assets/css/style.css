@@ -1,5 +1,44 @@
+body {
+
+background-color: burlywood;
+font-size: x-large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+
+
+}
+#name {
+
+font-size: 40px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 .crystal-image {
 
-height : 100px;
-width : 100px
+height : 200px;
+width : 200px
+}
+header {
+
+text-align: center;
+background-color: aqua;
+text-size-adjust: 60px;
+
+
+
 }
